@@ -124,11 +124,68 @@ header {
 
 
 .segment2 {
- margin-top: 60px;
- margin-left:200px;
- margin-right:200px;
+ margin-top: 90px;
+ margin-left:100px;
+ margin-right:100px;
+ font-size: 21px;
+ padding-bottom:20px;
+ background-color: #04AA6D;
+ height: 700px;
 }
 
 .segment2 p{
 	margin-top:20px;
+	font-size: 18px;
+	
 }
+
+.button01{
+	margin-top:80px;
+    background-color:#00CED1;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+    font-size: 20px;
+}
+
+.image01{
+	float: right; 
+    margin-left: 10px; 
+    padding-right: 50px;
+    width: 100%; /* Scale image to the width of its container */
+    max-width: 50%; /* Limit the maximum width to 50% of the container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px auto; /* Center the image and add spacing */
+    display: block;
+    position: relative;
+    top: -100px;
+}
+
+.awards-container {
+	margin-top: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: distinct background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.award {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.award img {
+    max-width: 100%; /* Ensures responsive image */
+    height: auto;
+}
+
+.award p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
