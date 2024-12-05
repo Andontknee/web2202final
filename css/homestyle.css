@@ -81,6 +81,41 @@ header {
     padding-right:70px;
 }
 
+.trusted-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.trusted-header {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.trusted-header strong {
+    color: #007bff;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 .segment1 img {
 	position: absolute;
@@ -125,68 +160,188 @@ header {
 
 
 .segment2 {
- margin-top: 90px;
- margin-left:100px;
- margin-right:100px;
- font-size: 21px;
- padding-bottom:20px;
- background-color: #04AA6D;
- height: 700px;
+  margin: 90px 20px 0 50px;
+  padding: 20px;
+  background-color: #04AA6D;
+  border-radius: 10px;
+  display: flex; /* Create a side-by-side layout */
+  justify-content: space-between; /* Ensure space between text and image */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Space between text and image */
+  color: white;
 }
 
-.segment2 p{
-	margin-top:20px;
-	font-size: 18px;
-	
+.segment2-text {
+  flex: 1; /* Allow text content to take up available space */
+  display: block; /* Ensure text content is vertically stacked */
+  padding-top:10%;
 }
 
-.button01{
-	margin-top:80px;
-    background-color:#00CED1;
-    color: #fff;
-    border:none; 
-    border-radius:10px; 
-    padding:15px;
-    min-height:30px; 
-    min-width: 120px;
-    font-size: 20px;
+.segment2-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px; /* Space below the heading */
 }
 
-.image01{
-	float: right; 
-    margin-left: 10px; 
-    padding-right: 50px;
-    width: 100%; /* Scale image to the width of its container */
-    max-width: 50%; /* Limit the maximum width to 50% of the container */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px auto; /* Center the image and add spacing */
-    display: block;
-    position: relative;
-    top: -100px;
+.segment2-text p {
+  font-size: 18px;
+  margin-bottom: 15px; /* Space between paragraphs */
+  line-height: 1.5; /* Better spacing for readability */
 }
 
-.awards-container {
-	margin-top: 25px;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 20px;
-    background-color: #f9f9f9; /* Optional: distinct background */
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.button01 {
+  margin-top: 20px;
+  background-color: #00CED1;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block; /* Ensure button stays inline */
 }
 
-.award {
+.button01:hover {
+  background-color: #019CA4;
+}
+
+
+.image01 {
+  flex: 1; /* Allow the image to take up available space */
+  max-width: 50%; /* Ensure the image doesn’t dominate the layout */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners to the image */
+  display: block;
+  padding-right: 10px;
+}
+
+
+
+.awards-section {
     text-align: center;
-    margin: 10px auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto;
 }
 
-.award img {
-    max-width: 100%; /* Ensures responsive image */
-    height: auto;
+.awards-header .small-title {
+    font-size: 0.9rem;
+    color: #007bff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.award p {
-    font-size: 16px;
-    margin-top: 10px;
+.awards-header h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.4;
 }
+
+.awards-header h2 strong {
+    color: #007bff;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.award-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.award-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.award-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+}
+
+.segment03{
+	padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Shared Styles for Sections */
+.educate-yourself, 
+.testimonials, 
+.support-us {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Educate Yourself Section */
+.educate-yourself h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.educate-yourself p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.testimonials blockquote {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.testimonials blockquote footer {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Support Us Section */
+.support-us h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.support-us p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
 
