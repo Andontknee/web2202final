@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 5px 50px 10px 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar {
+	font-weight: bold;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    justify-content: center;
+    padding: 30px 50px 30px 50px;
+    
+}
+
+.nav-links {	
+    display: flex;
+    gap: 60px;
+    
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #2ecc71; /* Green hover effect */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto; /* Adjust size according to logo */
+}
+.login-button a {
+    padding: 8px 16px;
+    color: #00bcd4; /* Light blue color */
+    border: 2px solid #00bcd4;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 110%;
+}
+
+.login-button a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+
+/* General Styles */
+
+.login-background{
+  font-family: Arial, sans-serif;
+  background-color: #d8f5c7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+	
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+  height:auto;
+
+
+  
+}
+
+/* Logo Section */
+.logo02 img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.logo02 h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333333;
+}
+
+/* Title */
+h2 {
+  font-size: 40px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Form Section */
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.login-form button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0097a7;
+}
+
+/* Links */
+.links p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #333333;
+}
+
+.links a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Social Login Section */
+.socials-title {
+  font-size: 14px;
+  color: #333333;
+  margin: 20px 0 10px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
