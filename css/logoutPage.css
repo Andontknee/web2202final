@@ -1,5 +1,4 @@
-/* General Reset */
-/* General Reset */
+/* styles.css */
 * {
     margin: 0;
     padding: 0;
@@ -10,23 +9,25 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header Styles */
 header {
     padding: 5px 50px 10px 50px;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .navbar {
-    font-weight: bold;
+	font-weight: bold;
     display: flex;
     align-items: center;
+    /*justify-content: space-between;*/
     justify-content: center;
-    padding: 30px 50px;
+    padding: 30px 50px 30px 50px;
+    
 }
 
-.nav-links {
+.nav-links {	
     display: flex;
     gap: 60px;
+    
 }
 
 .nav-links a {
@@ -52,6 +53,7 @@ header {
     width: auto; /* Adjust size according to logo */
 }
 
+
 .login-button a {
     padding: 8px 16px;
     color: #00bcd4; /* Light blue color */
@@ -66,30 +68,28 @@ header {
     background-color: #00bcd4;
     color: #fff;
 }
-/* Login Page Styles */
-.login-background {
-    background-color: #d8f5c7; /* Light green for calm registration background */
-    margin: 0;
-    padding: 0;
+/* Background Styles */
+.logout-background {
+    background-color: #d8f5c7; /* Light green background for calm ambiance */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
 }
 
-
-.login-container {
+/* Logout Container */
+.logout-container {
     background-color: #ffffff;
-    padding: 50px 20px;
+    padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 500px;
-    height: auto;
-    position: relative;
-    top: -80px; /* Adjust negative value to move it closer to the top */
+    margin-top: -50px; /* Offset the container for proper alignment */
 }
 
+/* Logo Section */
 .logo02 img {
     width: 60px;
     margin-bottom: 10px;
@@ -101,64 +101,71 @@ header {
     color: #333333;
 }
 
-.login-container h1 {
-    font-size: 36px;
+/* Title */
+h2 {
+    font-size: 40px;
     color: #333333;
-    margin-bottom: 50px;
-}
-
-.login-form p {
     margin-bottom: 20px;
-    text-align: left;
+    padding-top:10px;
+}
+
+/* Paragraph */
+p {
     font-size: 16px;
-    color: #333;
+    color: #333333;
+    margin-bottom: 20px;
+    padding-top:20px;
+    padding-bottom:30px;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.login-form input[type="submit"] {
-    background-color: #00bcd4;
+/* Logout Button */
+.logout-button {
+    padding: 10px 20px;
     color: white;
+    background-color: #00bcd4;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    width: 100%;
+    text-decoration: none;
     font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.login-form input[type="submit"]:hover {
+.logout-button:hover {
     background-color: #0097a7;
 }
 
-.links {
-    margin-top: 20px;
-}
-
-.links a {
-    color: #007BFF;
+.gotohome-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
-}
-
-.links a:hover {
-    text-decoration: underline;
-}
-
-
-.error {
-    color: red;
     font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.gotohome-button:hover {
+    background-color: #0097a7;
+}
+
+/* Header Fix */
+header {
+    margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .logout-container {
+        width: 90%;
+        padding: 30px 15px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }

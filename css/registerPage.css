@@ -1,5 +1,4 @@
 /* General Reset */
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -66,8 +65,9 @@ header {
     background-color: #00bcd4;
     color: #fff;
 }
-/* Login Page Styles */
-.login-background {
+
+/* Background Styles */
+.registration-background {
     background-color: #d8f5c7; /* Light green for calm registration background */
     margin: 0;
     padding: 0;
@@ -77,19 +77,18 @@ header {
     height: 100vh;
 }
 
-
-.login-container {
+/* Registration Container */
+.registration-container {
     background-color: #ffffff;
-    padding: 50px 20px;
+    padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 500px;
     height: auto;
-    position: relative;
-    top: -80px; /* Adjust negative value to move it closer to the top */
 }
 
+/* Logo Section */
 .logo02 img {
     width: 60px;
     margin-bottom: 10px;
@@ -101,30 +100,30 @@ header {
     color: #333333;
 }
 
-.login-container h1 {
-    font-size: 36px;
+/* Title */
+h2 {
+    font-size: 40px;
     color: #333333;
-    margin-bottom: 50px;
-}
-
-.login-form p {
     margin-bottom: 20px;
-    text-align: left;
-    font-size: 16px;
-    color: #333;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+/* Form Section */
+.registration-form input {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-bottom: 15px;
     border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 14px;
 }
 
-.login-form input[type="submit"] {
+.registration-form input:focus {
+    border-color: #2ecc71;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+.registration-form button {
     background-color: #00bcd4;
     color: white;
     border: none;
@@ -136,12 +135,15 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.login-form input[type="submit"]:hover {
+.registration-form button:hover {
     background-color: #0097a7;
 }
 
-.links {
-    margin-top: 20px;
+/* Links Section */
+.links p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333333;
 }
 
 .links a {
@@ -154,11 +156,74 @@ header {
     text-decoration: underline;
 }
 
+/* Responsive Design */
+@media (max-width: 600px) {
+    .registration-container {
+        width: 90%;
+        padding: 30px 15px;
+    }
 
-.error {
-    color: red;
+    .nav-links {
+        gap: 30px;
+        font-size: 14px;
+    }
+
+    .login-button a {
+        font-size: 14px;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px; /* Space between form elements */
+    margin: 20px auto;
+    width: 100%; /* Form spans full width of container */
+}
+
+form p {
     font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
+    color: #333333;
+    width: 100%; /* Ensures input labels align properly */
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+form p input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px; /* Space between label and input */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form p input:focus {
+    border-color: #2ecc71;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+/* Submit Button */
+form p input[type="submit"] {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form p input[type="submit"]:hover {
+    background-color: #0097a7;
+}
+
+/* Adjusted Form Layout */
+.registration-container form {
+    text-align: left;
+    margin-top: 20px;
 }

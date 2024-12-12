@@ -67,3 +67,129 @@ header {
     background-color: #00bcd4;
     color: #fff;
 }
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('path_to_your_image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.about-container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-us h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.mission-vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;  /* Space between Mission and Vision */
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.item {
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .item {
+        width: 90%;
+    }
+}
+
+.container03 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
