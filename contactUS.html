@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="">
+    <title>Contact Us | Feedables</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="contactUS.css">
 </head>
 <body>
-<h1> Contact Us</h1>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="community.html">Community</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="resources.html">Resources</a>
+            </div>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/feedables_logo.png" alt="Feedables Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="aboutUS.html">About Us</a>
+                <a href="supportUS.html">Support Us</a>
+                <a href="contactUS.html" class="active">Contact</a>
+            </div>
+            <div class="login-button">
+                <a href="loginPage.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-us-section">
+            <div class="contact-us-header">
+                <h1>Get in Touch</h1>
+                <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:contact@feedables.org">contact@feedables.org</a></li>
+                        <li><strong>Phone:</strong> +123 456 7890</li>
+                    </ul>
+                </div>
+
+                <form class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="social-media-links">
+                <p>Follow us on:</p>
+                <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter" class="social-icon"></a>
+                <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram" class="social-icon"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Feedables. All rights reserved.</p>
+    </footer>
 </body>
+</html>

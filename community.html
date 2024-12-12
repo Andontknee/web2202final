@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedables Community</title>
-    <link rel="stylesheet" href="css/homestyle.css">
-
+    <title>Community - Feedables</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="community.css">
 </head>
 <body>
-    <header> <!--this section is the heading section use across all the webpages in this project-->
+    <!-- Global Header -->
+    <header>
         <nav class="navbar">
             <div class="nav-links">
                 <a href="community.html">Community</a>
@@ -17,9 +18,8 @@
             </div>
             <div class="logo">
                 <a href="home.html">
-                    <img src="images\feedables_logo.png" alt="Feedables Logo" >
+                    <img src="images/feedables_logo.png" alt="Feedables Logo">
                 </a>
-                
             </div>
             <div class="nav-links">
                 <a href="aboutUS.html">About Us</a>
@@ -31,5 +31,64 @@
             </div>
         </nav>
     </header>
-    <!--header until here-->
-    </body>
+
+    <main>
+        <section class="community-intro">
+            <h1>Welcome to the Feedables Community</h1>
+            <p>Join the conversation to share ideas, stories, and solutions for reducing food wastage. Together, we can make a difference!</p>
+            <img src="images/community_intro.jpg" alt="Community Image" class="intro-image">
+        </section>
+
+        <section class="community-posts">
+            <article class="post">
+                <h2>5 Ways to Safely Donate Excess Food</h2>
+                <img src="images/food_donation.jpg" alt="Food Donation" class="post-image">
+                <p>Author: Sarah L. · 2 hours ago</p>
+                <p>Have you ever wondered how to ensure the safety of donated food? Here are five steps to follow to ensure the safety of your donations...</p>
+                <div class="engagement">
+                    <span>❤️ 25 Likes</span> · <span>💬 8 Comments</span> · <span>🔗 Share</span>
+                </div>
+            </article>
+
+            <article class="post">
+                <h2>How I Reduced Food Waste by Sharing with Neighbors</h2>
+                <img src="images/neighbors_sharing.jpg" alt="Neighbors Sharing" class="post-image">
+                <p>Author: John D. · 3 days ago</p>
+                <p>Last year, I started noticing how much food I was wasting every week. After connecting with my neighbors, I found a way to reduce food waste significantly...</p>
+                <div class="engagement">
+                    <span>❤️ 18 Likes</span> · <span>💬 12 Comments</span> · <span>🔗 Share</span>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="comments">
+            <h2>Latest Comments</h2>
+            <div class="comment">
+                <img src="images/user_avatar.jpg" alt="User Avatar" class="comment-avatar">
+                <p><strong>Emily T.:</strong> What a great initiative! How did you convince others to join?</p>
+            </div>
+            <div class="comment">
+                <img src="images/user_avatar2.jpg" alt="User Avatar" class="comment-avatar">
+                <p><strong>Sarah L.:</strong> I love this idea! I’m going to try it in my neighborhood and see if we can organize a small food drive.</p>
+            </div>
+        </section>
+
+        <!-- New Post Section -->
+        <section class="new-post">
+            <h2>Create a New Post</h2>
+            <form action="submitPost.html" method="POST">
+                <label for="post-title">Title:</label>
+                <input type="text" id="post-title" name="post-title" required>
+                <label for="post-content">Content:</label>
+                <textarea id="post-content" name="post-content" rows="4" required></textarea>
+                <button type="submit">Submit Post</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Feedables. All rights reserved.</p>
+    </footer>
+</body>
+</html>
