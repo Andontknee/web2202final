@@ -1,0 +1,249 @@
+.testimonials-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.testimonials-section h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.testimonials-section p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-content p {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.testimonial-content span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.testimonial-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.testimonial-card {
+    display: none; /* Hide all cards initially */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.testimonial-card.active {
+    display: block; /* Show active card */
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-info h4 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.testimonial-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.testimonial-dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.dot.active {
+    background-color: #007BFF;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: none;
+    user-select: none;
+}
+
+.left-nav {
+    left: 20px;
+}
+
+.right-nav {
+    right: 20px;
+}
+
+.testimonial-carousel:hover .carousel-nav {
+    display: block;
+}
+
+
+
+.impact-metrics {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.metric {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.metric h3 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.metric p {
+    color: #666;
+    font-size: 16px;
+}
+
+.highlight-stories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.stories-title {
+    width: 100%;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+}
+
+.story-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1 1 200px;
+    max-width: calc(25% - 20px);
+    text-align: center;
+}
+
+.story-card img.story-image {
+    width: 80%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.story-card h3 {
+    color: #007BFF;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.story-card p {
+    color: #666;
+    font-size: 16px;
+}
+
+.statistics-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.statistic {
+    text-align: center;
+}
+
+.statistic .icon {
+    font-size: 24px;
+}
+
+.statistic h3 {
+    margin-top: 10px;
+    color: #007BFF;
+    font-size: 20px;
+}
+
+.image-text-overlay {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%); 
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
