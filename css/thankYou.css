@@ -1,0 +1,73 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Container for Thank You Message */
+.thank-you-container {
+    background-color: #fff;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Emphasis on Email */
+.thank-you-container strong {
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+/* Button Styling */
+.thank-you-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.thank-you-buttons a {
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.thank-you-buttons a:hover {
+    background-color: #45a049;
+}
+
+.thank-you-buttons a:active {
+    background-color: #388e3c;
+}
+
+/* Small Text at the Bottom */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 40px;
+}

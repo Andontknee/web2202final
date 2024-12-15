@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 5px 50px 10px 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar {
+	font-weight: bold;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    justify-content: center;
+    padding: 30px 50px 30px 50px;
+    
+}
+
+.nav-links {	
+    display: flex;
+    gap: 60px;
+    
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #2ecc71; /* Green hover effect */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto; 
+}
+
+
+.login-button a {
+    padding: 8px 16px;
+    color: #00bcd4; 
+    border: 2px solid #00bcd4;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 110%;
+}
+
+.login-button a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    padding: 50px;
+}
+
+.hero .image-container {
+    margin-bottom: 20px; 
+}
+
+.hero .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero .text-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero .text-container p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    justify-content: center;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:40px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f4b400;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a:hover {
+    color: #f4b400;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 14px;
+    color: #aaa;
+}

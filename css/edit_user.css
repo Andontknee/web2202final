@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    padding: 5px 50px 10px 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #2ecc71; /* Green hover effect */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto; /* Adjust size according to logo */
+}
+
+.login-button a {
+    padding: 8px 16px;
+    color: #00bcd4; /* Light blue color */
+    border: 2px solid #00bcd4;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 110%;
+}
+
+.login-button a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+/* Edit User Page Styles */
+.edit-background {
+    background-color: #d8f5c7; /* Light green background for consistency */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.edit-container {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height: auto;
+    position: relative;
+    
+}
+
+.logo02 img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.logo02 h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333333;
+}
+
+.edit-container h1 {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+.edit-form p {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="email"],
+.edit-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.edit-form input[type="submit"] {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-form input[type="submit"]:hover {
+    background-color: #0097a7;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.edit-buttons {
+    display:grid;
+    justify-content: centre;
+    margin-top: 20px;
+}
+
+
+.edit-buttons a {
+    display: grid;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.edit-buttons a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}

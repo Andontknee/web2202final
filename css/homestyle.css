@@ -161,14 +161,13 @@ header {
 
 .segment2 {
   margin: 90px 20px 0 50px;
-  padding: 20px;
-  background-color: #04AA6D;
+  padding: 20px; 
   border-radius: 10px;
   display: flex; /* Create a side-by-side layout */
   justify-content: space-between; /* Ensure space between text and image */
   align-items: flex-start; /* Align items to the top */
   gap: 20px; /* Space between text and image */
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .segment2-text {
@@ -191,6 +190,7 @@ header {
 .button01 {
   margin-top: 20px;
   background-color: #00CED1;
+  text-decoration:none;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -199,6 +199,7 @@ header {
   cursor: pointer;
   display: inline-block; /* Ensure button stays inline */
 }
+
 
 .button01:hover {
   background-color: #019CA4;
@@ -260,6 +261,13 @@ header {
     transition: transform 0.3s ease;
 }
 
+.award-card img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: 80px; /* Consistent height for all images */
+    object-fit: contain; /* Maintains aspect ratio, avoids distortion */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
 .award-card h3 {
     font-size: 1rem;
     margin-bottom: 10px;
@@ -293,28 +301,151 @@ button:hover {
   background-color: #0056b3;
 }
 
+.segment03{
+	margin: 90px 20px 0 50px;
+  padding: 20px; 
+  border-radius: 10px;
+  display: flex; /* Create a side-by-side layout */
+  justify-content: space-between; /* Ensure space between text and image */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Space between text and image */
+  color: rgb(0, 0, 0);
+}
+
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 /* Shared Styles for Sections */
-.educate-yourself, 
-.testimonials, 
-.support-us {
-  background-color: white;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+.educate-yourself-section {
+  background-color: #f9ffe6; /* Light greenish background */
+  padding: 50px 20px;
+  margin-top:60px;
 }
 
-/* Educate Yourself Section */
-.educate-yourself h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.educate-yourself-container { 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.educate-yourself p {
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.text-content p {
   font-size: 16px;
+  color: #666;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
 
+.btn-primary {
+  background-color: #00cfcf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.image-content img {
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: white;
+  padding: 50px 20px;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.testimonial-text {
+  max-width: 40%;
+}
+
+.badge {
+  font-size: 12px;
+  color: #00cfcf;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.testimonial-text h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.btn-secondary {
+  background-color: #00cfcf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.testimonial-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.testimonial-content img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.quote-box {
+  background-color: #e6f9ff;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.author {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  font-size: 12px;
+}
 /* Testimonials Section */
 .testimonials h2 {
   font-size: 20px;
@@ -333,14 +464,90 @@ button:hover {
 }
 
 /* Support Us Section */
-.support-us h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+/* Support Us Section */
+.support-us-section {
+  background-color: #ffffff; /* White background */
+  padding: 50px 20px;
 }
 
-.support-us p {
+.support-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px; /* Space between text and image */
+}
+
+.support-text-content {
+  max-width: 50%;
+}
+
+.support-text-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.support-text-content p {
   font-size: 16px;
+  color: #555555;
+  line-height: 1.6;
   margin-bottom: 20px;
+}
+
+.support-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.support-btn-primary {
+  background-color: #00cfcf; /* Teal button */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.support-btn-secondary {
+  background-color: transparent;
+  color: #00cfcf;
+  border: 2px solid #00cfcf;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.support-image-content img {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .support-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .support-text-content {
+    max-width: 100%;
+  }
+
+  .support-buttons {
+    justify-content: center;
+  }
+
+  .support-image-content img {
+    max-width: 100%;
+  }
 }
 
 /* Section Styling */
@@ -375,7 +582,12 @@ button:hover {
 }
 
 .card img {
-  max-width: 100%;
+  width: 100%; 
+  max-width: 400px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -466,4 +678,3 @@ button:hover {
     font-size: 14px;
     color: #aaa;
 }
-
