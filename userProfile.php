@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['profile_image'])) {
     $upload_dir = 'uploads/';
     $file_name = basename($_FILES['profile_image']['name']);
     $file_path = $upload_dir . $file_name;
-
+    
     // Check if the uploaded file is an image
     if (getimagesize($_FILES['profile_image']['tmp_name'])) {
         if (move_uploaded_file($_FILES['profile_image']['tmp_name'], $file_path)) {
@@ -52,6 +52,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['edit_profile'])) {
      
 </head>
 <body>
+
+<header> <!--this section is the heading section use across all the webpages in this project-->
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="community.html">Community</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="resources.html">Resources</a>
+            </div>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images\feedables_logo.png" alt="Feedables Logo" >
+                </a>
+                
+            </div>
+            <div class="nav-links">
+                <a href="aboutUS.html">About Us</a>
+                <a href="supportUS.html">Support Us</a>
+                <a href="contactUS.html">Contact</a>
+            </div>
+            <div class="login-button">
+                <a href="loginPage.php">Login</a>
+            </div>
+        </nav>
+    </header>
+    <!--header until here-->
+    <div class ="profile-background">
     <div class="profile-container">
         <h1>Welcome, <?php echo htmlspecialchars($first_name); ?>!</h1>
 
@@ -65,24 +91,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['edit_profile'])) {
             <p><strong>Biography:</strong> <?php echo isset($_SESSION['bio']) ? nl2br(htmlspecialchars($_SESSION['bio'])) : 'No biography provided.'; ?></p>
         </div>
 
-        <!-- Image Upload Form -->
-        <form action="" method="POST" enctype="multipart/form-data">
-            <label for="profile_image">Upload New Profile Image:</label>
-            <input type="file" name="profile_image" id="profile_image" accept="image/*">
-            <button type="submit" class="btn">Upload Image</button>
-        </form>
-
-        <!-- Edit Profile Form -->
-        <form action="" method="POST" class="edit-profile-form">
-            <h3>Edit Profile</h3>
-            <input type="text" name="first_name" placeholder="First Name" value="<?php echo htmlspecialchars($first_name); ?>" required>
-            <input type="text" name="last_name" placeholder="Last Name" value="<?php echo htmlspecialchars($last_name); ?>" required>
-            <textarea name="bio" placeholder="Write a short biography..." required><?php echo isset($_SESSION['bio']) ? htmlspecialchars($_SESSION['bio']) : ''; ?></textarea>
-            <button type="submit" name="edit_profile" class="btn">Save Changes</button>
-        </form>
-
+     <a href="edit_profile.php" class="btn">Edit Profile</a>
         <!-- Logout Link -->
         <a href="logout.php" class="btn">Logout</a>
     </div>
+    </div>d
 </body>
 </html>

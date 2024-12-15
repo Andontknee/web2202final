@@ -56,7 +56,8 @@
 
 <div class="links">
     <p>Don’t have an account yet? <a href="registerPage.php">Register</a></p>
-    <p>Forgot your password? <a href="#">Reset</a></p>
+    <p>Forgot your password? <a href="resetPasswordPage.php">Reset</a></p>
+
 </div>
 	</div>
 	</div>

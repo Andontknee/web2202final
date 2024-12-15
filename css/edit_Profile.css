@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d8f5c7; /* Light green for background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile Container */
+.profile-container,
+.edit-profile-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px; /* Increased width for better visibility */
+}
+
+/* Edit Profile Title */
+.edit-profile-container h1 {
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.edit-profile-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%; /* Align labels with inputs */
+}
+
+.edit-profile-form input[type="text"],
+.edit-profile-form textarea {
+    width: 90%; /* Wider input fields */
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.edit-profile-form textarea {
+    resize: vertical;
+    height: 120px; /* Adjust height of textarea */
+}
+
+.edit-profile-form input[type="text"]:focus,
+.edit-profile-form textarea:focus {
+    border-color: #2ecc71;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+/* Save Changes Button */
+.edit-profile-form button {
+    display: inline-block;
+    background-color: #00bcd4; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Auto-width for better alignment */
+}
+
+.edit-profile-form button:hover {
+    background-color: #0097a7;
+}
+
+/* Back to Profile Link */
+.edit-profile-container .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.edit-profile-container .btn:hover {
+    background-color: #27ae60;
+}

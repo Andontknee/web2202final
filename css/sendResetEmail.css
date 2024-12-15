@@ -1,0 +1,138 @@
+/* Container for centering content */
+/* Styling for the main content area */
+.main-container-bg{
+	background-color: #d8f5c7; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.main-content {
+    background-color: white;
+    width: 500px; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 100px auto; 
+    transform: translateY(-200px);
+}
+
+/* Success and Error Messages */
+.error {
+    color: #ff4d4d; 
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.success {
+    color: #28a745; /* Green color for success */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+}
+
+/* Buttons Container */
+.buttons-container {
+    margin-top: 20px;
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 600px) {
+    .main-content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 5px 50px 10px 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar {
+	font-weight: bold;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    justify-content: center;
+    padding: 30px 50px 30px 50px;
+    
+}
+
+.nav-links {	
+    display: flex;
+    gap: 60px;
+    
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #2ecc71; /* Green hover effect */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto; /* Adjust size according to logo */
+}
+
+
+.login-button a {
+    padding: 8px 16px;
+    color: #00bcd4; /* Light blue color */
+    border: 2px solid #00bcd4;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 110%;
+}
+
+.login-button a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}

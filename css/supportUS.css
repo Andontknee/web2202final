@@ -70,123 +70,156 @@ header {
 }
 
 
-.segment1 {
-	position: relative; /* Ensure it can contain positioned elements */
-    background-color: #ccffcc; /* Adjust to match the green color */
-    width: 100%; /* Ensure it spans the desired width */
-    height: 450px; /* Adjust height as needed */
-    overflow: hidden; /* Prevent overflow outside the green segment */
-    color: white;
-    padding-left:70px;
-    padding-right:70px;
+/* Support Section Styling */
+.header-section {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-
-.segment1 img {
-	position: absolute;
-    top: 0;	
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image fills the segment without distortion */
-    z-index: 1;
-}
-
-.segment1::before {
-    content: "";
+.header-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 2; /* Sits above the image */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.segment1 h1{
-	padding-top: 80px;
-    position: relative;
-    z-index: 3; /* Bring the text in front of the image */
-    color: white; /* Adjust color to ensure text is readable */
-    text-align: center; /* Center the text if needed */
-    margin: 0; /* Adjust margins as per your design */
-    font-size: 40px;
-}
-.segment1 p {
-	padding-top: 30px;
-    position: relative;
-    z-index: 3; /* Bring the text in front of the image */
-    color: white; /* Adjust color to ensure text is readable */
-    text-align: center; /* Center the text if needed */
-    margin: 0; /* Adjust margins as per your design */
-    font-size: 25px;
-}
-
-
-
-.segment2 {
- margin-top: 90px;
- margin-left:100px;
- margin-right:100px;
- font-size: 21px;
- padding-bottom:20px;
- background-color: #04AA6D;
- height: 700px;
-}
-
-.segment2 p{
-	margin-top:20px;
-	font-size: 18px;
-	
-}
-
-.button01{
-	margin-top:80px;
-    background-color:#00CED1;
+.header-title {
     color: #fff;
-    border:none; 
-    border-radius:10px; 
-    padding:15px;
-    min-height:30px; 
-    min-width: 120px;
-    font-size: 20px;
+    font-size: 2.5em; /* Adjust font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better readability */
+}
+.header-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
-.image01{
-	float: right; 
-    margin-left: 10px; 
-    padding-right: 50px;
-    width: 100%; /* Scale image to the width of its container */
-    max-width: 50%; /* Limit the maximum width to 50% of the container */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px auto; /* Center the image and add spacing */
-    display: block;
-    position: relative;
-    top: -100px;
-}
 
-.awards-container {
-	margin-top: 25px;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 20px;
-    background-color: #f9f9f9; /* Optional: distinct background */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-.award {
+.content {
+    background-color: #fff;
+    padding: 40px 80px 20px 80px;
     text-align: center;
-    margin: 10px auto;
+    line-height: 1.6;
+    margin-bottom: 80px;
 }
 
-.award img {
-    max-width: 100%; /* Ensures responsive image */
+.content h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+/* Donate Button */
+.donate-button {
+    display: inline-block;
+    background-color: #00c4cc;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #0099a0;
+}
+
+
+.donation-support h1 {
+    text-align: center;
+    color: #333;
+}
+
+.donation-support p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.support-container {
+	 background-color: #D3D3D3;
+}
+.support-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right:50px;
+   
+}
+
+.support-item img {
+    width: 400px;
     height: auto;
+    margin-right: 80px;
+    margin-left:80px;
+    border-radius: 8px;
+    flex-shrink: 0;
 }
 
-.award p {
-    font-size: 16px;
-    margin-top: 10px;
+.support-text {
+    flex: 1;
 }
 
+.support-text h2 {
+    color: #000000;
+    margin-top: 0;
+ 
+}
+
+.support-text p {
+    color: #000000;
+    margin-top: 20px;
+    margin-right: 70px;
+
+}
+
+
+.marketplace-section {
+    text-align: center;
+    margin-bottom: 80px; /* Add bottom margin for spacing */
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.marketplace-section h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Add bottom margin for spacing */
+}
+
+.marketplace-section p {
+    text-align: center;
+    margin-bottom: 50px; /* Add bottom margin for spacing */
+}
+
+.image-container img {
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.shop-now-button {
+    background-color: #008000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 60px; /* Add top margin for spacing */
+}

@@ -1,4 +1,4 @@
-/* styles.css */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,25 +9,23 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Header Section */
 header {
     padding: 5px 50px 10px 50px;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .navbar {
-	font-weight: bold;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
     justify-content: center;
-    padding: 30px 50px 30px 50px;
-    
+    padding: 30px 50px;
 }
 
-.nav-links {	
+.nav-links {
     display: flex;
     gap: 60px;
-    
 }
 
 .nav-links a {
@@ -44,8 +42,7 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0 80px;
 }
 
 .logo img {
@@ -53,7 +50,7 @@ header {
     width: auto; /* Adjust size according to logo */
 }
 
-
+/* Login Button */
 .login-button a {
     padding: 8px 16px;
     color: #00bcd4; /* Light blue color */
@@ -69,26 +66,24 @@ header {
     color: #fff;
 }
 
-
+/* Green Segment */
 .segment1 {
-	position: relative; /* Ensure it can contain positioned elements */
-    background-color: #ccffcc; /* Adjust to match the green color */
-    width: 100%; /* Ensure it spans the desired width */
-    height: 450px; /* Adjust height as needed */
-    overflow: hidden; /* Prevent overflow outside the green segment */
+    position: relative;
+    background-color: #ccffcc;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
     color: white;
-    padding-left:70px;
-    padding-right:70px;
+    padding: 0 70px;
 }
 
-
 .segment1 img {
-	position: absolute;
-    top: 0;	
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image fills the segment without distortion */
+    object-fit: cover;
     z-index: 1;
 }
 
@@ -99,167 +94,229 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 2; /* Sits above the image */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
-.segment1 h1{
-	padding-top: 80px;
-    position: relative;
-    z-index: 3; /* Bring the text in front of the image */
-    color: white; /* Adjust color to ensure text is readable */
-    text-align: center; /* Center the text if needed */
-    margin: 0; /* Adjust margins as per your design */
-    font-size: 40px;
-}
+.segment1 h1,
 .segment1 p {
-	padding-top: 30px;
     position: relative;
-    z-index: 3; /* Bring the text in front of the image */
-    color: white; /* Adjust color to ensure text is readable */
-    text-align: center; /* Center the text if needed */
-    margin: 0; /* Adjust margins as per your design */
+    z-index: 3;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.segment1 h1 {
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.segment1 p {
     font-size: 25px;
+    padding-top: 30px;
 }
 
-
-
+/* Secondary Segment */
 .segment2 {
- margin-top: 90px;
- margin-left:100px;
- margin-right:100px;
- font-size: 21px;
- padding-bottom:20px;
- background-color: #04AA6D;
- height: 700px;
+    margin: 90px 100px 0;
+    font-size: 21px;
+    padding-bottom: 20px;
+    background-color: #04AA6D;
+    height: 700px;
 }
 
-.segment2 p{
-	margin-top:20px;
-	font-size: 18px;
-	
+.segment2 p {
+    margin-top: 20px;
+    font-size: 18px;
 }
 
-.button01{
-	margin-top:80px;
-    background-color:#00CED1;
+/* Button Styling */
+.button01 {
+    margin-top: 80px;
+    background-color: #00CED1;
     color: #fff;
-    border:none; 
-    border-radius:10px; 
-    padding:15px;
-    min-height:30px; 
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 30px;
     min-width: 120px;
     font-size: 20px;
 }
 
-.image01{
-	float: right; 
-    margin-left: 10px; 
+/* Responsive Image */
+.image01 {
+    float: right;
+    margin-left: 10px;
     padding-right: 50px;
-    width: 100%; /* Scale image to the width of its container */
-    max-width: 50%; /* Limit the maximum width to 50% of the container */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px auto; /* Center the image and add spacing */
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    margin: 10px auto;
     display: block;
     position: relative;
     top: -100px;
 }
 
-.awards-container {
-	margin-top: 25px;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 20px;
-    background-color: #f9f9f9; /* Optional: distinct background */
-    border: 1px solid #ddd;
-    border-radius: 8px;
+/* Picture Header Section */
+.header-section {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    background-image: url('path/to/your/image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.award {
-    text-align: center;
-    margin: 10px auto;
-}
-
-.award img {
-    max-width: 100%; /* Ensures responsive image */
-    height: auto;
-}
-
-.award p {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-/* Archive Section */
-.archive {
-    padding: 20px 0;
-}
-
-/* Individual Resource Card */
-.resource {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.resource:hover {
-    transform: translateY(-5px);
-}
-
-/* Title and Description */
-.resource-title {
-    font-size: 1.8em;
-    margin: 0 0 10px 0;
-}
-
-.resource-description {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-/* Footer Section */
-.resource-footer {
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.resource-date {
-    font-size: 0.9em;
-    color: #777;
+.header-title {
+    color: #fff;
+    font-size: 2.5em; /* Adjust font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better readability */
+}
+.header-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
-.resource-link {
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
 }
 
-.resource-link:hover {
-    text-decoration: underline;
+.tip {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    text-align: center;
+    height: 400px; /* Adjusted height for picture + title */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+    justify-content: start; /* Align items to the top of the card */
+ 
 }
 
-/* Responsive Design */
+.tip img {
+    width: 100%;
+    max-height: 200px; /* Limit image height */
+    object-fit: cover; /* Prevent distortion */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between image and title */
+}
+
+.tip h3 {
+    font-size: 1.2em;
+    margin: 10px 0; /* Space between the title and image */
+    color: #333;
+}
+
+.tip p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px; /* Space between text and title */
+    text-align: justify; /* Align the paragraph for better readability */
+}
+
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .resource-title {
-        font-size: 1.5em;
-    }
-    
-    .resource-description {
-        font-size: 1em;
+    .container {
+        grid-template-columns: 1fr 1fr; /* 2 columns on smaller screens */
     }
 
-    .resource-footer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .resource-link {
-        margin-top: 10px;
+    .tip {
+        height: 450px; /* Extra height for smaller screens */
     }
 }
 
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .tip {
+        height: 500px; /* Extra height for mobile screens */
+    }
+}
+
+
+.container02 {
+    display: flex;
+    align-items: flex-start; 
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    min-height: 400px; /* Adjust this value as needed */
+}
+
+.pie-chart img {
+    width: 150px;
+    height: 150px;
+}
+
+.content02 {
+    flex: 1;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right:40px;
+}
+
+.content02 p {
+    font-size: 16px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right:40px;
+}
+
+.learn-more {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right:40px;
+    
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #00bfff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+.read-more:hover {
+    background-color: #009acd;
+}
