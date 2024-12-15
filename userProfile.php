@@ -80,9 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['edit_profile'])) {
     <div class ="profile-background">
     <div class="profile-container">
         <h1>Welcome, <?php echo htmlspecialchars($first_name); ?>!</h1>
-
-        <!-- Profile Image -->
-        <img src="<?php echo isset($_SESSION['profile_image']) ? htmlspecialchars($_SESSION['profile_image']) : 'default-avatar.jpg'; ?>" alt="Profile Image" class="profile-image">
+       
 
         <div class="profile-details">
             <p><strong>First Name:</strong> <?php echo htmlspecialchars($first_name); ?></p>

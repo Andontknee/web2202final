@@ -15,6 +15,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $errors[] = 'You forgot to enter your first name.';
     } else {
         $fn = mysqli_real_escape_string($dbc, trim($_POST['first_name']));
+        // Check if the first name contains only letters and spaces:
+        if (!preg_match("/^[a-zA-Z ]*$/", $fn)) {
+            $errors[] = 'First name can only contain letters and spaces.';
+        }
     }
     
     // Check for a last name:
@@ -22,6 +26,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $errors[] = 'You forgot to enter your last name.';
     } else {
         $ln = mysqli_real_escape_string($dbc, trim($_POST['last_name']));
+        // Check if the last name contains only letters and spaces:
+        if (!preg_match("/^[a-zA-Z ]*$/", $ln)) {
+            $errors[] = 'Last name can only contain letters and spaces.';
+        }
     }
     
     // Check for an email address:
@@ -54,21 +62,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             header("Location: registration_success.html");
             exit();
             
-            // Print a message:
-           // echo '<h1>Thank you!</h1>
-		//<p>You are now registered successfully.</p><p><br /></p>';
-            
         } else { // If it did not run OK.
             
             header("Location: registration_error.html");
             exit();
-            
-            // Public message:
-           // echo '<h1>System Error</h1>
-			//<p class="error">You could not be registered due to a system error. We apologize for any inconvenience.</p>';
-            
-            // Debugging message:
-            echo '<p>' . mysqli_error($dbc) . '<br /><br />Query: ' . $q . '</p>';
             
         } // End of if ($r) IF.
         
@@ -77,28 +74,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
         
     } else { // Report the errors.
-        
-        echo '<h1>Error!</h1>
-		<p class="error">The following error(s) occurred:<br />';
+        // Include the error message within the registration container
+        $error_message = '<div class="error-messages">';
         foreach ($errors as $msg) { // Print each error.
-            echo " - $msg<br />\n";
+            $error_message .= "<p>$msg</p>";
         }
-        echo '</p><p>Please try again.</p><p><br /></p>';
-        
-    } // End of if (empty($errors)) IF.
+        $error_message .= '</div>';
+    }
     
     mysqli_close($dbc); // Close the database connection.
     
 } // End of the main Submit conditional.
 ?>
 
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
     <link rel="stylesheet" href="css/registerPage.css">
 </head>
-
 <body>
     <header> <!--this section is the heading section use across all the webpages in this project-->
         <nav class="navbar">
@@ -122,24 +120,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
         </nav>
     </header>
-    <!--header until here-->
 
-    <div class="registration-background"> 
+    <div class="registration-background">
         <div class="registration-container">
             <div class="logo02">
                 <img src="images/feedables_logo.png" alt="Feedables Logo">
             </div>
-           
+
             <h2>Register</h2>
+
+            <!-- Display the error messages inside the registration container -->
+            <?php if (isset($error_message)) { echo $error_message; } ?>
+
             <form action="registerPage.php" method="post">
-	<p>First Name: <input type="text" name="first_name" size="15" maxlength="20" value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>" /></p>
-	<p>Last Name: <input type="text" name="last_name" size="15" maxlength="20" value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>" /></p>
-	<p>Email Address: <input type="text" name="email" size="20" maxlength="40" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>"  /> </p>
-	<p>Password: <input type="password" name="pass1" size="10" maxlength="40" value="<?php if (isset($_POST['pass1'])) echo $_POST['pass1']; ?>"  /></p>
-	<p>Confirm Password: <input type="password" name="pass2" size="10" maxlength="20" value="<?php if (isset($_POST['pass2'])) echo $_POST['pass2']; ?>"  /></p>
-	<p><input type="submit" name="submit" value="Register" /></p>
-</form>
-            
+                <p>First Name: <input type="text" name="first_name" size="15" maxlength="20" value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>" /></p>
+                <p>Last Name: <input type="text" name="last_name" size="15" maxlength="20" value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>" /></p>
+                <p>Email Address: <input type="text" name="email" size="20" maxlength="40" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>"  /> </p>
+                <p>Password: <input type="password" name="pass1" size="10" maxlength="40" value="<?php if (isset($_POST['pass1'])) echo $_POST['pass1']; ?>"  /></p>
+                <p>Confirm Password: <input type="password" name="pass2" size="10" maxlength="20" value="<?php if (isset($_POST['pass2'])) echo $_POST['pass2']; ?>"  /></p>
+                <p><input type="submit" name="submit" value="Register" /></p>
+            </form>
+
             <div class="links">
                 <p>Already have an account? <a href="loginPage.php">Login</a></p>
             </div>
@@ -147,4 +148,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 </body>
 </html>
-
